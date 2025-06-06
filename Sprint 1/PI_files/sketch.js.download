@@ -1,0 +1,41 @@
+let x =90
+let y =90
+let Width =80
+let Spacing =20
+
+
+function setup() {
+  createCanvas(500, 500, SVG);
+  frameRate (3)
+  rectMode(CENTER)
+}
+
+function draw() {
+
+for (let j = 0; j <=3; j++){
+  background (255)
+  strokeWeight(1)
+  noFill()
+  clear()
+  
+
+  for (let x=90; x <= 6* Width; x += Width +3) {
+    for (let y=90; y <= 6* Width; y += Width +3) {
+      square(x, y, Width) 
+
+      
+   for(let i = 0; i < random (2,5); i++){
+   square(random(x-Spacing, x+Spacing), random(y-Spacing, y+Spacing), random(Width/8, Width))
+
+      stroke(random(100,255),0,random(150,255))
+   
+}  
+}
+
+}
+}
+}
+
+
+
+
